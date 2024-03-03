@@ -254,4 +254,5 @@ function deleteOldTables()
     $navbarPlugin->addDescription($gL10n->get('PLG_STATISTICS_UNINSTALL_TABLES_DELETED'));
     $gMenu->initialize();
 }
+
 ?>
