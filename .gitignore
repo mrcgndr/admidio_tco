@@ -20,6 +20,14 @@
 !/adm_plugins/latest-documents-files/
 !/adm_plugins/who-is-online/
 !/adm_plugins/category_report/
+# plugins used for TCO
+!/adm_plugins/awards
+!/adm_plugins/formfiller
+!/adm_plugins/geburtstagsliste
+!/adm_plugins/mitgliedsbeitrag
+!/adm_plugins/search_member
+!/adm_plugins/statistics
+!/adm_plugins/written_communications
 
 # Don't commit the external libs from vendor folder
 /vendor

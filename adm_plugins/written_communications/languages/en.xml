@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+   <string name="PLG_WC_ADDRESS_USER">Use my address as sender</string>
+   <string name="PLG_WC_CREATE_WRITTEN_COMMUNICATIONS">Create written communication</string>
+   <string name="PLG_WC_CHOOSE_TEMPLATE">Choose template</string>
+   <string name="PLG_WC_DOWNLOAD_DOCUMENT">Download document</string>
+   <string name="PLG_WC_FILENAME">Correspondence</string>
+   <string name="PLG_WC_SELECTION">Selection</string>
+   <string name="PLG_WC_INDIVIDUAL_RECIPIENT">Individual recipient</string>
+</resources>

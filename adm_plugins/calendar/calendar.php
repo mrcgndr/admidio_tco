@@ -290,7 +290,8 @@ if ($plg_geb_aktiv) {
                 break;
             case 0: // fallthrough
             default:
-                $name = $row['last_name'] . ($row['last_name'] ? ', ' : '') . $row['first_name'];
+            //    $name = $row['last_name'] . ($row['last_name'] ? ', ' : '') . $row['first_name'];
+                $name = $row['first_name'] . ' ' . $row['last_name'];
         }
 
         $birthdaysMonthDayArray[$birthdayDate->format('j')][] = array(

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="PLG_SEARCH_HEADLINE">Search member</string>
+  <string name="PLG_SEARCH_PLACEHOLDER">name</string>
+  <string name="PLG_SEARCH_PLACEHOLDER_INCLUDING_CITY">name oder residence</string>
+  <string name="PLG_SEARCH_NO_RESULTS">No search results</string>
+  <string name="PLG_SEARCH_NOT_LOGGED_IN">You have to be logged in to search for members.</string>
+</resources>
