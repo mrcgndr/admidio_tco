@@ -58,7 +58,7 @@ if ($gValidLogin) {
     $form->addInput(
         'plg_search_usr',
         '',
-        null,
+        '',
         array('type' => 'search', 'placeholder' => $placeholder)
     );
     $form->addSubmitButton('btn_search', 'suchen', array('icon' => 'fa-search'));
@@ -107,7 +107,7 @@ if ($gValidLogin) {
                             AND mem_rol_id ' . $sqlRol . '
                     ) as data
                 WHERE 
-                    CONCAT (\' \', first_name, last_name) LIKE ?';
+                    CONCAT (first_name, \' \', last_name) LIKE ?';
 
         $queryParams = array(
             $gProfileFields->getProperty('LAST_NAME', 'usf_id'),
@@ -153,7 +153,7 @@ if ($gValidLogin) {
                 }
                 $allSearchResults[] = $resultString;
             }
-            $textSearchResults =  implode('<br />', $allSearchResults);
+            $textSearchResults = implode('<br />', $allSearchResults);
             echo $textSearchResults;
         } else {
             echo $gL10n->get('PLG_SEARCH_NO_RESULTS');

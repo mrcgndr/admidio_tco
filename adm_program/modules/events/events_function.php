@@ -456,7 +456,8 @@ if (in_array($getMode, array(3, 4, 7), true)) {
     $participants = new Participants($gDb, (int) $event->getValue('dat_rol_id'));
 
     // if current user is allowed to participate or user could edit this event then update user inputs
-    if ($event->possibleToParticipate() || $participants->isLeader($gCurrentUserId)) {
+    // if ($date->possibleToParticipate() || $participants->isLeader($gCurrentUserId)) {
+    if ($event->possibleToParticipate() || $gCurrentUser->editEvents() || $participants->isLeader($gCurrentUserId)) {
         $member->readDataByColumns(array('mem_rol_id' => (int) $event->getValue('dat_rol_id'), 'mem_usr_id' => $user->getValue('usr_id')));
         $member->setValue('mem_comment', $postUserComment); // Comments will be saved in any case. Maybe it is a documentation afterwards by a leader or admin
 

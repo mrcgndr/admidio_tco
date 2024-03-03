@@ -1,6 +1,7 @@
 ====== Search Member ======
 
-Version 1.0.0
+Version 1.0.1 
+Plugin for admidio v4.x.x (tested until 4.3.0 Beta 3)
 
 ==== Description ====
 This plugin can be used in the overview page. It provides a search field to search for members of 
@@ -14,7 +15,7 @@ If your organisation has members across multiple cities, you can include the cit
 {{:en:plugins:search_member_screenshot.png?400|}}
 
 ==== Download ====
-The plugin is available at [[https://github.com/nanoflow/admidio-search_member]]
+The plugin is available at [[https://github.com/nanoflow/search_member]]
 
 ==== Installation ====
 copy the plugin to your adm_plugins folder
