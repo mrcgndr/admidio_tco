@@ -177,7 +177,7 @@
   <string name="ORG_ENABLE_REGISTRATION_MODULE">Registrierung aktivieren</string>
   <string name="ORG_ENABLE_REGISTRATION_MODULE_DESC">Die Registrierung durch Besucher:innen der Homepage kann über diese Einstellung aktiviert oder deaktiviert werden. Welche Profilfelder bei der Registrierung angezeigt werden, kann in den Profilfeld-Einstellungen je Feld konfiguriert werden. (Voreinstellung: ja)</string>
   <string name="ORG_ENABLE_RSS_FEEDS">Web-Feeds aktivieren</string>
-  <string name="ORG_ENABLE_RSS_FEEDS_DESC">Admidio kann Web-Feeds für verschiedene Module (Ankündigungen, Veranstaltungen, Gästebuch, Fotogalerien und Weblinks) auf den jeweiligen Übersichtsseiten bereitstellen, die dann über den Browser einem Feedreader zugeordnet werden können. (Voreinstellung: ja)</string>
+  <string name="ORG_ENABLE_RSS_FEEDS_DESC">Admidio kann Web-Feeds für verschiedene Module (Ankündigungen, Termine, Gästebuch, Fotogalerien und Weblinks) auf den jeweiligen Übersichtsseiten bereitstellen, die dann über den Browser einem Feedreader zugeordnet werden können. (Voreinstellung: ja)</string>
   <string name="ORG_FIELD_DESCRIPTION">Es können beliebig viele zusätzliche Felder definiert werden. Diese werden im Profil der einzelnen Benutzer angezeigt und können dort auch bearbeitet werden. Außerdem stehen diese Felder bei den Eigenen Listen zur Verfügung.</string>
   <string name="ORG_FIELD_DISABLED">Feld nur für Mitglieder mit dem Recht #VAR1_BOLD# editierbar</string>
   <string name="ORG_FIELD_DISABLED_DESC">Ein gesperrtes Feld kann von dem Mitglied im eigenen Profil nicht mehr bearbeitet werden. Es kann nur noch von Mitgliedern bearbeitet werden, die das Rollenrecht besitzen alle Mitglieder zu bearbeiten. Leiter:innen einer Rolle mit dem Recht, Profile der Rollenmitglieder zu bearbeiten, können dieses Feld ebenfalls bearbeiten.</string>
@@ -195,7 +195,7 @@
   <string name="ORG_JAVASCRIPT_EDITOR_COLOR">Farbe Javascript-Editor</string>
   <string name="ORG_JAVASCRIPT_EDITOR_COLOR_DESC">Hier wird die Hintergrundfarbe des Javascript-Editors angegeben. Dies kann ein hexadezimaler Farbwert sein z.B. #ffa500 oder ein RGB-Wert z.B. rgb(255, 185,0).</string>
   <string name="ORG_JAVASCRIPT_EDITOR_ENABLE">Javascript-Editor benutzen</string>
-  <string name="ORG_JAVASCRIPT_EDITOR_ENABLE_DESC">Ein umfangreicher Javascript-Editor wird an vielen Stellen im Programm genutzt, damit die Benutzerin oder der Benutzer Beschreibungen z.B. für Ankündigungen, Veranstaltungen oder ähnliches komfortabler eingeben kann. Wird der Editor deaktiviert, so wird ein einfaches mehrzeiliges Textfeld dargestellt.</string>
+  <string name="ORG_JAVASCRIPT_EDITOR_ENABLE_DESC">Ein umfangreicher Javascript-Editor wird an vielen Stellen im Programm genutzt, damit die Benutzerin oder der Benutzer Beschreibungen z.B. für Ankündigungen, Termine oder ähnliches komfortabler eingeben kann. Wird der Editor deaktiviert, so wird ein einfaches mehrzeiliges Textfeld dargestellt.</string>
   <string name="ORG_LAST_UPDATE_STEP">Letzter Update-Schritt</string>
   <string name="ORG_LOGIN_AUTOMATICALLY">Automatisch anmelden</string>
   <string name="ORG_LOGIN_AUTOMATICALLY_DESC">Benutzer:innen können beim Anmelden festlegen, ob die Anmeldung auf dem Rechner gespeichert werden soll. Bei einem weiteren Besuch der Homepage sind diese Benutzer:innen dann automatisch angemeldet. Dies kann allerdings auch dazu führen, dass Benutzer:innen diese Option unbedacht einsetzen und so evtl. fremde Personen Zugriff auf die Daten bekommen. (Voreinstellung: ja)</string>
@@ -209,7 +209,7 @@
   <string name="ORG_ORGANIZATION_PROPERTIES_DESC">Allgemeine Admidio-Einstellungen, sowie Einstellungen zu den einzelnen Modulen, können hier festgelegt werden.</string>
   <string name="ORG_ORGANIZATION_SUCCESSFULLY_ADDED">Die Organisation #VAR1_BOLD# wurde hinzugefügt. Sie können diese nun bei der Anmeldung auswählen.\n\nFalls Sie für diese Organisation eine separate Homepage erstellt haben, müssen Sie auf der entsprechenden Seite noch die neue Organisation in die config.php eintragen.</string>
   <string name="ORG_PARENT_ORGANIZATION">Übergeordnete Organisation</string>
-  <string name="ORG_PARENT_ORGANIZATION_DESC">Hier können Sie die übergeordnete Organisation festlegen. Diese haben zum Beispiel die Möglichkeit Veranstaltungen und Ankündigungen anzulegen, die auch in der aktuellen Organisation sichtbar sind.</string>
+  <string name="ORG_PARENT_ORGANIZATION_DESC">Hier können Sie die übergeordnete Organisation festlegen. Diese haben zum Beispiel die Möglichkeit Termine und Ankündigungen anzulegen, die auch in der aktuellen Organisation sichtbar sind.</string>
   <string name="ORG_PASSWORD_MIN_STRENGTH">Passwort Sicherheit </string>
   <string name="ORG_PASSWORD_MIN_STRENGTH_DESC">Hier können Sie festlegen wie sicher und komplex Passwörter mindestens sein müssen.\nDer Wert in Klammern gibt an, wieviele Versuche durchschnittlich nötig sind, bis das Passwort ermittelt wurde.\n\nKeine: riskantes Passwort. (&lt;10^3)\nNiedrig: Schutz gegen gedrosselte Online-Angriffe. (&lt;10^6)\nMittel: Schutz gegen ungedrosselte Online-Angriffe. (&lt;10^8)\nHoch: Mäßiger Schutz gegen Offline-Hashing-Angriffe. (&lt;10^10)\nSehr hoch: Starker Schutz gegen Offline-Hashing-Angriffe. (&gt;=10^10)</string>
   <string name="ORG_PASSWORD_MIN_STRENGTH_NO">Keine</string>
@@ -263,7 +263,7 @@
   <string name="SYS_ADD_ATTACHMENT">Anhang hinzufügen</string>
   <string name="SYS_ADD_COLUMN">Spalte hinzufügen</string>
   <string name="SYS_ADD_COLUMNS_DESC">Ordnen Sie in der folgenden Tabelle beliebig vielen Spalten entsprechende Profilfelder zu. Zusätzlich können Sie die Standardsortierung vorgeben und Bedingungen zu Feldern hinzufügen, nach denen die jeweiligen Mitglieder gefiltert werden sollen.</string>
-  <string name="SYS_ADD_EVENT_TO_CALENDAR">Veranstaltung in den Kalender übernehmen</string>
+  <string name="SYS_ADD_EVENT_TO_CALENDAR">Termin in den Kalender übernehmen</string>
   <string name="SYS_ADD_RECIPIENTS">Empfänger:innen hinzufügen</string>
   <string name="SYS_ADD_TO_DATABASE">Zur Datenbank hinzufügen</string>
   <string name="SYS_ADDRESS">Adresse</string>
@@ -287,7 +287,7 @@
   <string name="SYS_ALL">Alle</string>
   <string name="SYS_ALL_DAY">Ganztägig</string>
   <string name="SYS_ALL_ORGANIZATIONS">Alle Organisationen</string>
-  <string name="SYS_ALL_ORGANIZATIONS_DESC">Die ausgewählte Kategorie ist für alle Organisationen freigegeben.\nDas gerade bearbeitete Objekt (Veranstaltung, Ankündigung, Profilfeld, Weblink ...) wird also nicht nur in dieser Organisation sichtbar sein, sondern in allen folgenden Organisationen ebenfalls angezeigt: #VAR1#.</string>
+  <string name="SYS_ALL_ORGANIZATIONS_DESC">Die ausgewählte Kategorie ist für alle Organisationen freigegeben.\nDas gerade bearbeitete Objekt (Termin, Ankündigung, Profilfeld, Weblink ...) wird also nicht nur in dieser Organisation sichtbar sein, sondern in allen folgenden Organisationen ebenfalls angezeigt: #VAR1#.</string>
   <string name="SYS_ALL_THIS_ORGANIZATION">Alle Mitglieder dieser Organisation</string>
   <string name="SYS_ALLOW_ADDITIONAL_GUESTS">Teilnehmende können anonyme Gäste anmelden</string>
   <string name="SYS_ALLOW_ADDITIONAL_GUESTS_DESC">Teilnehmende können zu ihrer Anmeldung weitere zusätzliche Plätze belegen. Diese werden dann von der maximalen Anzahl der Teilnehmenden abgezogen und die übrigen freien Plätze werden dadurch reduziert. Dies ist z.B. sinnvoll, wenn eine teilnehmende Persion weitere Gäste mitbringen kann und dadurch eine Gesamtanzahl von freien Plätzen benötigt.  </string>
@@ -325,8 +325,8 @@
   <string name="SYS_ATTACHMENT_SIZE_DESC">Benutzer:innen können nur Dateien anhängen, bei denen die Dateigröße kleiner als der hier angegebene Wert ist. Steht hier 0, so sind keine Anhänge im E-Mailmodul möglich. (Voreinstellung: 5MB)</string>
   <string name="SYS_ATTACHMENT_TO_LARGE">Ihr Dateianhang konnte nicht hochgeladen werden.\nVermutlich ist der Anhang zu groß!</string>
   <string name="SYS_ATTACHMENTS_VAR">#VAR1# Anhänge</string>
-  <string name="SYS_ATTEND_EVENT">Sie haben die Teilnahme für die Veranstaltung #VAR1_BOLD# am #VAR2# zugesagt. </string>
-  <string name="SYS_ATTEND_POSSIBLY">Sie haben die Teilnahme für die Veranstaltung #VAR1_BOLD# am #VAR2# unter Vorbehalt zugesagt. </string>
+  <string name="SYS_ATTEND_EVENT">Sie haben die Teilnahme für den Termin #VAR1_BOLD# am #VAR2# zugesagt. </string>
+  <string name="SYS_ATTEND_POSSIBLY">Sie haben die Teilnahme für den Termin #VAR1_BOLD# am #VAR2# unter Vorbehalt zugesagt. </string>
   <string name="SYS_AUTO_DETECT">Automatische Erkennung</string>
   <string name="SYS_AVAILABLE">Verfügbar</string>
   <string name="SYS_AVAILABLE_BETA">Verfügbare Beta</string>
@@ -344,7 +344,7 @@
   <string name="SYS_CALENDAR">Kalender</string>
   <string name="SYS_CALENDARS">Kalender</string>
   <string name="SYS_CANCEL">Absagen</string>
-  <string name="SYS_CANCEL_EVENT">Sie haben die Teilnahme für die Veranstaltung #VAR1_BOLD# am #VAR2# wieder abgesagt. </string>
+  <string name="SYS_CANCEL_EVENT">Sie haben die Teilnahme für den Termin #VAR1_BOLD# am #VAR2# abgesagt. </string>
   <string name="SYS_CANCEL_MEMBERSHIP">Mitgliedschaft beenden</string>
   <string name="SYS_CANCEL_RELATIONSHIP">Beziehung löschen</string>
   <string name="SYS_CANT_DELETE_ROLE">Sie können die Rolle #VAR1_BOLD# nicht löschen.</string>
@@ -442,7 +442,7 @@
   <string name="SYS_CREATE_CATEGORY">Kategorie anlegen</string>
   <string name="SYS_CREATE_CONTACT">Kontakt anlegen</string>
   <string name="SYS_CREATE_ENTRY">Eintrag anlegen</string>
-  <string name="SYS_CREATE_EVENT">Veranstaltung anlegen</string>
+  <string name="SYS_CREATE_EVENT">Termin anlegen</string>
   <string name="SYS_CREATE_FOLDER">Ordner anlegen</string>
   <string name="SYS_CREATE_FOLDER_DESC">Der neue Ordner wird im bestehenden Ordner #VAR1_BOLD# angelegt.</string>
   <string name="SYS_CREATE_HTACCESS">.htaccess erstellen</string>
@@ -457,12 +457,12 @@
   <string name="SYS_CREATED_BY_AND_AT">Angelegt von #VAR1# am #VAR2#</string>
   <string name="SYS_CSV">CSV</string>
   <string name="SYS_CURRENT_DATABASE_VERSION">Aktuelle Datenbankversion</string>
-  <string name="SYS_CURRENT_EVENTS_OF_ORGA">Aktuelle Veranstaltungen der Organisation #VAR1#</string>
+  <string name="SYS_CURRENT_EVENTS_OF_ORGA">Aktuelle Termine der Organisation #VAR1#</string>
   <string name="SYS_CURRENT_MEMBER">Aktuelles Mitglied</string>
   <string name="SYS_CURRENT_PASSWORD">Aktuelles Passwort</string>
   <string name="SYS_CURRENT_PROFILE_PICTURE">Aktuelles Profilfoto</string>
   <string name="SYS_CURRENT_USER_NO_EMAIL" description="Var1 und Var2 erzeugen den Profil-Link">Sie haben keine gültige E-Mail-Adresse hinterlegt!\n\nTragen Sie bitte in Ihrem #VAR1#Profil#VAR2# eine E-Mail-Adresse ein.</string>
-  <string name="SYS_DATA_CATEGORY_GLOBAL">Ist diese Option aktiviert, so sind die Objekte (Veranstaltungen, Ankündigungen, Weblinks ...) dieser Kategorie auch auf den Webseiten folgender Organisationen sichtbar:\n#VAR1_BOLD#</string>
+  <string name="SYS_DATA_CATEGORY_GLOBAL">Ist diese Option aktiviert, so sind die Objekte (Termine, Ankündigungen, Weblinks ...) dieser Kategorie auch auf den Webseiten folgender Organisationen sichtbar:\n#VAR1_BOLD#</string>
   <string name="SYS_DATA_MULTI_ORGA">Daten für mehrere Organisationen sichtbar</string>
   <string name="SYS_DATA_PROTECTION">Datenschutz</string>
   <string name="SYS_DATA_PROTECTION_DESC">Hier kann die URL zu deiner Seite mit den Datenschutzhinweisen hinterlegt werden. Diese Seite wird innerhalb des Hinweises auf die Verwendung von Cookies für weitere Informationen verlinkt. Sofern das gewählte Theme dies unterstützt, wird auch ein Link auf den Admidio-Seiten angezeigt. (Beispiel: https://www.example.com/data_protection.html)</string>
@@ -492,8 +492,8 @@
   <string name="SYS_DEACTIVATE_ROLE">Rolle deaktivieren</string>
   <string name="SYS_DEACTIVATE_ROLE_DESC">Wenn Sie die Rolle #VAR1_BOLD# deaktivieren, kann die Rolle nicht mehr genutzt und Objekten zugeordnet werden. Ebenso sind sämtliche Rechte dieser Rolle nicht mehr wirksam. Die Rolle mit ihren Einstellung und allen Mitgliedszuordnungen bleibt allerdings bestehen und kann zu einem späteren Zeitpunkt wieder aktiviert werden.</string>
   <string name="SYS_DEADLINE">Anmeldeschluss</string>
-  <string name="SYS_DEADLINE_AFTER_START">Der Anmeldeschluss liegt nach dem Beginn der Veranstaltung.</string>
-  <string name="SYS_DEADLINE_ATTENTION">Ihre Anmeldung kann nicht mehr verändert werden, da das vorgegebene Enddatum für Anmeldungen erreicht wurde oder die Veranstaltung in der Vergangenheit liegt. Bitte wenden Sie sich an die Leiter:innen der Veranstaltung oder eine:n Administrator:in!</string>
+  <string name="SYS_DEADLINE_AFTER_START">Der Anmeldeschluss liegt nach dem Beginn des Termins.</string>
+  <string name="SYS_DEADLINE_ATTENTION">Ihre Anmeldung kann nicht mehr verändert werden, da das vorgegebene Enddatum für Anmeldungen erreicht wurde oder der Termin in der Vergangenheit liegt. Bitte wenden Sie sich an die Leiter:innen des Termins oder eine:n Administrator:in!</string>
   <string name="SYS_DEBUG_OUTPUT">Debug-Ausgabe</string>
   <string name="SYS_DECIMAL_NUMBER">Dezimalzahl</string>
   <string name="SYS_DEFAULT_ASSIGNMENT_REGISTRATION">Standardzuordnung bei Registrierung</string>
@@ -507,13 +507,13 @@
   <string name="SYS_DEFAULT_LIST">Standardliste</string>
   <string name="SYS_DEFAULT_LIST_DESC">Soll eine Mitgliederliste zu dieser Rolle angezeigt werden und wird keine Listenkonfiguration vorgegeben, so wird die Liste in der systemweit eingestellten Standardlistenkonfiguration dargestellt. Über dieses Feld kann für die einzelne Rolle eine andere Listenkonfiguration ausgewählt werden, die angezeigt wird, wenn keine Listenkonfiguration vorgegeben ist.</string>
   <string name="SYS_DEFAULT_LIST_CONFIGURATION_PARTICIPATION">Standardkonfiguration der Liste aller Teilnehmenden</string>
-  <string name="SYS_DEFAULT_LIST_CONFIGURATION_PARTICIPATION_DESC">Eine der hier vorgegebenen Konfigurationen kann zur Standardkonfiguration für die Liste aller Teilnehmenden an Veranstaltungen dieser Organisation gemacht werden. Teilnehmende von Veranstaltungen werden mit dieser Konfiguration angezeigt.</string>
+  <string name="SYS_DEFAULT_LIST_CONFIGURATION_PARTICIPATION_DESC">Eine der hier vorgegebenen Konfigurationen kann zur Standardkonfiguration für die Liste aller Teilnehmenden an Terminen dieser Organisation gemacht werden. Teilnehmende von Terminen werden mit dieser Konfiguration angezeigt.</string>
   <string name="SYS_DEFAULT_LIST_NOT_SET_UP">Es wurde keine Standardliste eingerichtet!\n\nWenden Sie sich bitte an eine:n Administrator:in, damit dieser in den eigenen Listen eine beliebige Liste als Standardliste deklariert.</string>
   <string name="SYS_DEFAULT_VALUE">Standardwert</string>
   <string name="SYS_DEFAULT_VALUE_DESC">Sie können einen Standardwert für dieses Profilfeld hinterlegen. Dieser Wert wird bei einem neuen Mitglied in dem Profilfeld direkt vorbelegt. Tragen Sie dazu den Wert in dieses Feld ein, den Sie auch im Profil selber bei dem Feld hinterlegen würden.\n\nBei dem Datentyp Checkbox können Sie 1 für aktiviert und 0 für deaktiviert hinterlegen. Bei den Datentypen Dropdown-Listenfeld und Optionsfeld hinterlegen Sie die Nummer der Zeile aus der Werteliste in der der gewünschte Wert steht.</string>
   <string name="SYS_DEFAULT_VAR">Standard-#VAR1#</string>
   <string name="SYS_DEFAULT_VIEW">Standard-Darstellung</string>
-  <string name="SYS_DEFAULT_VIEW_DESC">Es kann ein Anzeigemodus für die Veranstaltungen vorausgewählt werden. Im Modus #VAR1_BOLD# werden alle Informationen zu einer Veranstaltung in einem Kasten angezeigt. Im Anzeigemodus #VAR2_BOLD# werden die wichtigsten Veranstaltungsinformationen in einer kompakten Liste angezeigt. (Standardeinstellung: #VAR1#)</string>
+  <string name="SYS_DEFAULT_VIEW_DESC">Es kann ein Anzeigemodus für die Termine vorausgewählt werden. Im Modus #VAR1_BOLD# werden alle Informationen zu einer Veranstaltung in einem Kasten angezeigt. Im Anzeigemodus #VAR2_BOLD# werden die wichtigsten Veranstaltungsinformationen in einer kompakten Liste angezeigt. (Standardeinstellung: #VAR1#)</string>
   <string name="SYS_DELETE">Löschen</string>
   <string name="SYS_DELETE_ALBUM">Album löschen</string>
   <string name="SYS_DELETE_CONFIGURATION">Konfiguration löschen</string>
@@ -575,8 +575,8 @@
   <string name="SYS_EDIT_CATEGORIES">Kategorien bearbeiten</string>
   <string name="SYS_EDIT_CATEGORY">Kategorie bearbeiten</string>
   <string name="SYS_EDIT_ENTRY">Eintrag bearbeiten</string>
-  <string name="SYS_EDIT_EVENTS">Veranstaltungen bearbeiten</string>
-  <string name="SYS_EDIT_EVENT">Veranstaltung bearbeiten</string>
+  <string name="SYS_EDIT_EVENTS">Termine bearbeiten</string>
+  <string name="SYS_EDIT_EVENT">Termin bearbeiten</string>
   <string name="SYS_EDIT_FILE">Datei bearbeiten</string>
   <string name="SYS_EDIT_FOLDER">Ordner bearbeiten</string>
   <string name="SYS_EDIT_MEMBERS">Mitglieder bearbeiten</string>
@@ -589,7 +589,7 @@
   <string name="SYS_EDIT_PROFILE_PIC_FROM">Profilfoto von #VAR1# #VAR2# bearbeiten</string>
   <string name="SYS_EDIT_ROLE">Rolle bearbeiten</string>
   <string name="SYS_EDIT_ROOMS">Räume bearbeiten</string>
-  <string name="SYS_EDIT_ROOMS_DESC">Hier können Räume für Veranstaltungen angelegt und bearbeitet werden.</string>
+  <string name="SYS_EDIT_ROOMS_DESC">Hier können Räume für Termine angelegt und bearbeitet werden.</string>
   <string name="SYS_EDIT_USER">Benutzer:in bearbeiten</string>
   <string name="SYS_EDIT_USER_IN_RELATION">Profil dieser Beziehung bearbeiten</string>
   <string name="SYS_EDIT_VAR">#VAR1# bearbeiten</string>
@@ -631,7 +631,7 @@
   <string name="SYS_ENABLE_GROUPS_ROLES">Gruppen &amp; Rollen aktivieren</string>
   <string name="SYS_ENABLE_GROUPS_ROLES_DESC">Zeigt die Gruppen und Rollen der Organisation an und ermöglicht die freie Konfiguration von Gruppen und Rollen. Eigene Liste können konfiguriert und angewendet werden. Dieses Modul ist generell nur für angemeldete Benutzerinnen und Benutzern verfügbar. (Voreinstellung: ja)</string>
   <string name="SYS_ENABLE_ICAL_EXPORT">iCal-Export ermöglichen</string>
-  <string name="SYS_ENABLE_ICAL_EXPORT_DESC">Ist diese Funktion aktiviert, lassen sich einzelne Veranstaltungen oder alle Veranstaltungen in einem festgelegten Zeitraum herunterladen. Auch das Abonnieren der Veranstaltungen mit einer Kalendersoftware wird möglich. (Voreinstellung: ja)</string>
+  <string name="SYS_ENABLE_ICAL_EXPORT_DESC">Ist diese Funktion aktiviert, lassen sich einzelne Termine oder alle Termine in einem festgelegten Zeitraum herunterladen. Auch das Abonnieren der Termine mit einer Kalendersoftware wird möglich. (Voreinstellung: ja)</string>
   <string name="SYS_ENABLE_NOTIFICATIONS">Systembenachrichtigungen aktivieren</string>
   <string name="SYS_ENABLE_NOTIFICATIONS_DESC">Hier können die Systembenachrichtigungen von Admidio deaktiviert werden. Systembenachrichtigungen werden versendet, wenn sich zum Beispiel ein:e neue:r Benutzer:in angemeldet hat. Aber auch Registrierungsbestätigungen werden als Systembenachrichtigungen verschickt. Dieses Feature sollte in der Regel nicht deaktiviert werden. Es sei denn der Server unterstützt keinen E-Mailversand. Das E-Mailmodul ist durch die Deaktivierung nicht betroffen. (Voreinstellung: ja)</string>
   <string name="SYS_ENABLE_PM_MODULE">Private Nachrichten aktivieren</string>
@@ -646,19 +646,19 @@
   <string name="SYS_ERROR_DATABASE_ACCESS">Folgender Fehler trat beim Zugriff auf die Datenbank auf:\n\n#VAR1#</string>
   <string name="SYS_ERROR_DELETE_DEFAULT_LIST">Die Liste #VAR1_BOLD# ist als Standardkonfiguration für das Modul #VAR1# in dieser Organisation hinterlegt und kann nicht gelöscht werden. Wählen Sie in den Moduleinstellungen eine andere Konfiguration zur Standardkonfiguration und versuchen Sie danach diese Konfiguration zu löschen.</string>
   <string name="SYS_ERROR_PAGE_NOT_FOUND">ERROR 404 - Seite nicht gefunden!</string>
-  <string name="SYS_EVENT">Veranstaltung</string>
-  <string name="SYS_EVENT_CATEGORIES_ROLES_DIFFERENT">Sie haben bei den Teilnehmenden Rollen zugeordnet, welche bei der gewählten Kategorie nicht das Recht haben die Veranstaltungen zu sehen. Bitte wählen Sie bei den Teilnehmenden eine der folgenden Rollen: #VAR1_BOLD#.</string>
+  <string name="SYS_EVENT">Termin</string>
+  <string name="SYS_EVENT_CATEGORIES_ROLES_DIFFERENT">Sie haben bei den Teilnehmenden Rollen zugeordnet, welche bei der gewählten Kategorie nicht das Recht haben die Termine zu sehen. Bitte wählen Sie bei den Teilnehmenden eine der folgenden Rollen: #VAR1_BOLD#.</string>
   <string name="SYS_EVENT_CHANGED_TITLE">Eine Veranstaltung wurde geändert auf #VAR1#</string>
   <string name="SYS_EVENT_CREATED_TITLE">Eine neue Veranstaltung wurde angelegt auf #VAR1#</string>
-  <string name="SYS_EVENT_DEADLINE_DESC">Teilnehmende können sich bis zu diesem Datum an der Veranstaltung anmelden. Leiter:innen und Benutzer:innen mit dem Recht Veranstaltungen zu bearbeiten können weiterhin Teilnehmende zuordnen. Wenn kein Datum angegeben wird, dann wird das Startdatum der Veranstaltung als Anmeldeschluss angenommen.</string>
+  <string name="SYS_EVENT_DEADLINE_DESC">Teilnehmende können sich bis zu diesem Datum an der Veranstaltung anmelden. Leiter:innen und Benutzer:innen mit dem Recht Termine zu bearbeiten können weiterhin Teilnehmende zuordnen. Wenn kein Datum angegeben wird, dann wird das Startdatum der Veranstaltung als Anmeldeschluss angenommen.</string>
   <string name="SYS_EVENT_MAX_MEMBERS">Hier kann die Anzahl der Teilnehmenden für diese Veranstaltung beschränkt werden. Soll die Anzahl nicht begrenzt werden, so kann dieses Feld leer gelassen werden.</string>
   <string name="SYS_EVENT_PARTICIPATION_ATTEND">Sie nehmen teil</string>
   <string name="SYS_EVENT_PARTICIPATION_TENTATIVE">Unter Vorbehalt</string>
   <string name="SYS_EVENT_PARTICIPATION_INVITED">Eingeladen</string>
   <string name="SYS_EVENT_PARTICIPATION_CANCELED">Abgesagt</string>
-  <string name="SYS_EVENTS">Veranstaltungen</string>
-  <string name="SYS_EVENTS_DESC">Es können Veranstaltungen angelegt und angeschaut werden. Kontakte können sich auf Wunsch zu speziellen Veranstaltungen anmelden.</string>
-  <string name="SYS_EVENTS_CONFIRMATION_OF_PARTICIPATION">Veranstaltungen - Teilnahmebestätigung</string>
+  <string name="SYS_EVENTS">Termine</string>
+  <string name="SYS_EVENTS_DESC">Es können Termine angelegt und angeschaut werden. Kontakte können sich auf Wunsch zu speziellen Terminen anmelden.</string>
+  <string name="SYS_EVENTS_CONFIRMATION_OF_PARTICIPATION">Termine - Teilnahme</string>
   <string name="SYS_EXAMPLE">Beispiel</string>
   <string name="SYS_EXAMPLES">Beispiele</string>
   <string name="SYS_EXCEL_2007_365">Excel 2007-365 (*.xlsx, *.xlsm, *.xlsb)</string>
@@ -759,9 +759,9 @@
   <string name="SYS_HTML_MAILS_REGISTERED_USERS_DESC">Die Erstellung und der Versand von HTML-Mails kann für registrierte Benutzer:innen aktiviert werden. Anstelle des normalen Textfeldes wird dann ein Javascript-Editor angezeigt über den der Text komfortabel editiert werden kann. Aus Sicherheitsgründen ist diese Funktion nicht für Gäste möglich.</string>
   <string name="SYS_HTML_TABLE">HTML-Tabelle</string>
   <string name="SYS_ICAL_DAYS_FUTURE">Anzahl iCal Tage Zukunft</string>
-  <string name="SYS_ICAL_DAYS_FUTURE_DESC">Anzahl der Tage in der Zukunft, die in einem iCal-Download oder -Abo einbezogen werden sollen. Wird der iCal-Download innerhalb des Veranstaltungsmoduls gestartet, dann wird diese Einstellung ignoriert und die gefilterten Veranstaltungen exportiert. (Voreinstellung: 365)</string>
+  <string name="SYS_ICAL_DAYS_FUTURE_DESC">Anzahl der Tage in der Zukunft, die in einem iCal-Download oder -Abo einbezogen werden sollen. Wird der iCal-Download innerhalb des Veranstaltungsmoduls gestartet, dann wird diese Einstellung ignoriert und die gefilterten Termine exportiert. (Voreinstellung: 365)</string>
   <string name="SYS_ICAL_DAYS_PAST">Anzahl iCal Tage Vergangenheit</string>
-  <string name="SYS_ICAL_DAYS_PAST_DESC">Anzahl der Tage in der Vergangenheit, die in einem iCal-Download oder -Abo einbezogen werden sollen. Wird der iCal-Download innerhalb des Veranstaltungsmoduls gestartet, dann wird diese Einstellung ignoriert und die gefilterten Veranstaltungen exportiert. (Voreinstellung: 30)</string>
+  <string name="SYS_ICAL_DAYS_PAST_DESC">Anzahl der Tage in der Vergangenheit, die in einem iCal-Download oder -Abo einbezogen werden sollen. Wird der iCal-Download innerhalb des Veranstaltungsmoduls gestartet, dann wird diese Einstellung ignoriert und die gefilterten Termine exportiert. (Voreinstellung: 30)</string>
   <string name="SYS_ICAL_DISABLED">Die iCal-Funktion ist deaktiviert.</string>
   <string name="SYS_ICON">Icon</string>
   <string name="SYS_ICQ">ICQ</string>
@@ -979,7 +979,7 @@
   <string name="SYS_NOTIFICATION_REGISTRATION_APPROVAL">Benachrichtigung zur Freigabe einer Registrierung</string>
   <string name="SYS_NOTIFICATION_REGISTRATION_CONFIRMATION">Benachrichtigung zur Bestätigung der Registrierung</string>
   <string name="SYS_NOTIFICATION_NEW_ENTRIES">Benachrichtigung bei neuen oder geänderten Einträgen</string>
-  <string name="SYS_NOTIFICATION_NEW_ENTRIES_DESC">Mitglieder mit der hinterlegten Benachrichtigungsrolle erhalten eine Systembenachrichtigung bei neuen oder geänderten Einträgen in den Modulen Ankündigungen, Veranstaltungen, Dokumente &amp; Dateien, Fotos, Weblinks und Gästebuch. (Standard: nein)</string>
+  <string name="SYS_NOTIFICATION_NEW_ENTRIES_DESC">Mitglieder mit der hinterlegten Benachrichtigungsrolle erhalten eine Systembenachrichtigung bei neuen oder geänderten Einträgen in den Modulen Ankündigungen, Termine, Dokumente &amp; Dateien, Fotos, Weblinks und Gästebuch. (Standard: nein)</string>
   <string name="SYS_NOTIFICATION_PROFILE_CHANGES">Benachrichtigung bei Profiländerungen</string>
   <string name="SYS_NOTIFICATION_PROFILE_CHANGES_DESC">Mitglieder der hinterlegten Rolle für Benachrichtigungen erhalten eine Systembenachrichtigung, wenn die Profildaten eines Mitglieds von einem Benutzer erstellt, geändert oder gelöscht werden. (Voreinstellung: nein)</string>
   <string name="SYS_NOTIFICATION_ROLE">Rolle für Benachrichtigungen</string>
@@ -1146,7 +1146,7 @@
   <string name="SYS_RIGHT_APPROVE_USERS">Registrierungen verwalten und zuordnen</string>
   <string name="SYS_RIGHT_ASSIGN_ROLES">Rollen verwalten und zuordnen</string>
   <string name="SYS_RIGHT_ASSIGN_ROLES_DESC">Benutzer:innen dieser Rolle haben Zugriff auf die Rollenverwaltung und können neue Rollen erstellen, verwalten und anderen Benutzerinnen oder Benutzern Rollen zuordnen.</string>
-  <string name="SYS_RIGHT_DATES">Veranstaltungen verwalten</string>
+  <string name="SYS_RIGHT_DATES">Termine verwalten</string>
   <string name="SYS_RIGHT_DOCUMENTS_FILES">Dokumente und Dateien verwalten</string>
   <string name="SYS_RIGHT_DOCUMENTS_FILES_DESC">Rollen mit dieser Berechtigung können im Modul für Dokumente und Dateien die Rechte vergeben, welche Rollen bestimme Ordner sehen oder Dateien hochladen dürfen.</string>
   <string name="SYS_RIGHT_EDIT_USER">Profildaten aller Kontakte bearbeiten</string>
@@ -1198,8 +1198,8 @@
   <string name="SYS_SAME_WINDOW">Gleiches Fenster</string>
   <string name="SYS_SATURDAY">Samstag</string>
   <string name="SYS_SAVE">Speichern</string>
-  <string name="SYS_SAVE_ALL_CANCELLATIONS">Absagen zu Veranstaltungen speichern</string>
-  <string name="SYS_SAVE_ALL_CANCELLATIONS_DESC">Absagen von Teilnehmenden zu Veranstaltungen können gespeichert werden. Die Absagen werden dann in der Liste aller Teilnehmenden ebenfalls angezeigt. Wird diese Option deaktiviert, dann werden Absagen nicht gespeichert und können in der Liste aller Teilnehmenden auch nicht eingesehen werden. Diese Option gilt ab dem Zeitpunkt der Einstellung und kann rückwirkend nicht mehr angewendet werden! (Standard : Ja)</string>
+  <string name="SYS_SAVE_ALL_CANCELLATIONS">Absagen zu Terminen speichern</string>
+  <string name="SYS_SAVE_ALL_CANCELLATIONS_DESC">Absagen von Teilnehmenden zu Terminen können gespeichert werden. Die Absagen werden dann in der Liste aller Teilnehmenden ebenfalls angezeigt. Wird diese Option deaktiviert, dann werden Absagen nicht gespeichert und können in der Liste aller Teilnehmenden auch nicht eingesehen werden. Diese Option gilt ab dem Zeitpunkt der Einstellung und kann rückwirkend nicht mehr angewendet werden! (Standard : Ja)</string>
   <string name="SYS_SAVE_ATTACHMENTS">Anhänge speichern</string>
   <string name="SYS_SAVE_ATTACHMENTS_DESC">E-Mail-Anhänge werden auf dem Webspace gespeichert und können nach dem Versand weiterhin in der gespeicherten E-Mail aufgerufen werden. (Voreinstellung: ja)</string>
   <string name="SYS_SAVE_CHANGES">Änderungen speichern</string>
