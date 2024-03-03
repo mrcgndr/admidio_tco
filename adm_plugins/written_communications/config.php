@@ -23,7 +23,7 @@ $plg_wc_roleAccess = 1;
 // Feel free to extend or define own roles in the array. As default only the role "Administrator" is allowed to use the plugin.
 // Example for further roles: $plg_wc_roleArray = array('Administrator', 'Vorstand', '...', '...');
 
-$plg_wc_roleArray = array('Administrator:in', 'Vorstand', 'Schriftführer', 'Aktivensprecher:in');
+$plg_wc_roleArray = array('Administrator:in', 'Vorstand', 'SchriftfÃ¼hrer', 'Aktivensprecher:in');
 
 // This array can be used to define additional profile fields for the template engine.
 // Customizable key/value pairs can be defined according to your database definitions of the profile fields.

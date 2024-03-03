@@ -1,0 +1,38 @@
+3.0.0(2024-02-18)
+    * Compatibility to Admidio v4.3.3
+2.0.0(2022-01-28)
+    * Compatibility to Admidio v4.1, thanks to rmbinder!
+1.2.0(2020-05-20)
+    * Fixed errors (white screen) while installation
+1.1.0(2020-01-12)
+    * Fixed full screen view
+    * Change handling of included files
+    * Fixed php warning in debug mode
+1.0.0(2020-01-06)
+    * Compatibility to Admidio v4.0.1
+0.6.0(2018-04-25)
+    * Compatibility to Admidio v3.3.1
+    * Fixed some php warnings
+0.5.0(2017-04-14)
+	* Compatibility tested against Admidio V3.2.8
+	* New Admidio-v3 Export routine (thx to rmbinder)
+	* New Admidio-v3 tables at admidio_show (thx to rmbinder)
+	* Securityfixes & no more phpwarnings
+0.4.0:	+ Compatibility to Admidio V3.2 (testet up to 3.2.2)
+		+ Fixed group-by Warning at recent MySQL-servers
+0.3.0: (thanks to  pphlwmarcel)
+		+ Configuration-File added (awards_config.php)
+			- Batch processing for Awards
+			- Choose if the Leader of a Role gets the award as well by default
+			- Only List Roles of a special Category
+			- Opportunity to enable the debug mode
+		+ Possibility for batch processing (Add a Award for a whole role)
+		+ Colors and symbols for success or failure
+		+ Enhancements in Code
+0.2.0:  + Added english translation
+	+ Removed Debug output
+0.1.0: 	+ Compatible to Admidio v3
+		+ Support of multiple Organisations
+0.0.2: New patch for categories
+
+0.0.1: Initial Submission

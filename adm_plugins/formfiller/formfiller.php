@@ -3,7 +3,7 @@
  ***********************************************************************************************
  * FormFiller
  *
- * Version 3.2.0
+ * Version 3.3.0
  * 
  * Dieses Plugin für Admidio ermoeglicht das Ausfuellen von PDF-Formularen sowie das Erstellen von Etiketten.
  *
@@ -11,9 +11,9 @@
  *
  * Hinweis: FormFiller verwendet die externen PHP-Klassen FPDF und FPDI
  *  
- * Compatible with Admidio version 4.2
+ * Compatible with Admidio version 4.3
  *
- * @copyright 2004-2023 The Admidio Team
+ * @copyright 2004-2024 The Admidio Team
  * @see https://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
@@ -148,7 +148,7 @@ foreach ($rolesEvents as $key => $row)
 array_multisort($sortFirst, SORT_NUMERIC, $sortSecond, SORT_NUMERIC, $sortThird, SORT_NUMERIC, $sortFourth, SORT_NUMERIC, $rolesEvents);
 $roles = array_merge($rolesNonEvents, $rolesEvents);
 
-$form->addSelectBox('rol_id', $gL10n->get('SYS_ROLE'), $roles, array( 'helpTextIdLabel' => 'PLG_FORMFILLER_CHOOSE_ROLESELECTION_DESC'));	
+$form->addSelectBox('rol_id', $gL10n->get('SYS_ROLE'), $roles, array( 'helpTextIdLabel' => 'PLG_FORMFILLER_CHOOSE_ROLESELECTION_DESC', 'multiselect' => true));	
 
 $form->addCheckbox('show_former_members', $gL10n->get('PLG_FORMFILLER_FORMER_MEMBERS_ONLY'));
 $form->addLine();
