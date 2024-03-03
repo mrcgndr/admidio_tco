@@ -13,7 +13,7 @@ function loadConf(newConf) {
 		self.location.href = "editor_process.php?mode=load" + saveScrollPos();
 	} else {
 		self.location.href = "editor_process.php?mode=load&sta_id=" + sta_id
-				+ saveScrollPos();
+			+ saveScrollPos();
 	}
 }
 
@@ -25,10 +25,10 @@ function deleteConfiguration() {
 		var select_box = document.getElementById("statistic_conf_select");
 		var current_text = select_box.options[select_box.selectedIndex].text;
 		Check = confirm("Willst du die Konfiguration \'" + current_text
-				+ "\' wirklich löschen?");
+			+ "\' wirklich löschen?");
 		if (Check == true) {
 			self.location.href = "editor_process.php?mode=delete&sta_id="
-					+ sta_id + saveScrollPos();
+				+ sta_id + saveScrollPos();
 		}
 	}
 }
@@ -45,7 +45,7 @@ function disableConditionInput(idOfElement) {
 
 function checkAllSelectBoxes() {
 	var nrOfSelectBoxes = document.getElementsByTagName("select").length;
-	for ( var i = 0; i < nrOfSelectBoxes; i++) {
+	for (var i = 0; i < nrOfSelectBoxes; i++) {
 		var tmpSelectBox = document.getElementsByTagName("select")[i];
 		var tmpSelectBoxId = tmpSelectBox.getAttribute("id");
 		var testString = /(func_arg)/g;
@@ -64,7 +64,7 @@ function checkAllSelectBoxes() {
 
 function replaceGTLT() {
 	var nrOfInputBoxes = document.getElementsByTagName("input").length;
-	for ( var i = 0; i < nrOfInputBoxes; i++) {
+	for (var i = 0; i < nrOfInputBoxes; i++) {
 		var tmpInputBox = document.getElementsByTagName("input")[i];
 		var tmpInputBoxId = tmpInputBox.getAttribute("id");
 		var testString = /(condition)/g;
@@ -93,7 +93,7 @@ function disableInvalidFunctions(idOfElement) {
 		ElementToChange.options[4].disabled = true;
 		ElementToChange.options[5].disabled = true;
 		if (ElementToChange.selectedIndex >= 2
-				&& ElementToChange.selectedIndex <= 5) {
+			&& ElementToChange.selectedIndex <= 5) {
 			ElementToChange.selectedIndex = 0;
 		}
 	} else {
@@ -104,7 +104,7 @@ function disableInvalidFunctions(idOfElement) {
 		ElementToChange.options[4].disabled = false;
 		ElementToChange.options[5].disabled = false;
 		if (ElementToChange.selectedIndex >= 0
-				&& ElementToChange.selectedIndex <= 1) {
+			&& ElementToChange.selectedIndex <= 1) {
 			ElementToChange.selectedIndex = 5;
 		}
 	}
@@ -122,7 +122,7 @@ function saveScrollPos() {
 function editStructure(action, tableNr, colNr, rowNr, mvUp) {
 	var sta_id = $("#statistic_conf_select").val();
 	var submitParameters = "?sta_id=" + sta_id
-			+ "&mode=editstructure&editaction=" + action;
+		+ "&mode=editstructure&editaction=" + action;
 	if (tableNr != undefined && tableNr != "") {
 		submitParameters += "&edittblnr=" + tableNr;
 	}
@@ -137,13 +137,12 @@ function editStructure(action, tableNr, colNr, rowNr, mvUp) {
 	}
 	submitParameters += saveScrollPos();
 	document.form_sta_config.action = document.form_sta_config.action
-			+ submitParameters;
+		+ submitParameters;
 	replaceGTLT();
 	document.form_sta_config.submit();
 }
 
-function editRowOrder(){
-
+function editRowOrder() {
 }
 
 function doFormSubmit(mode) {
@@ -155,14 +154,14 @@ function doFormSubmit(mode) {
 		sta_id = 1;
 		var select_box = document.getElementById("statistic_conf_select");
 		default_prompttext = select_box.options[select_box.selectedIndex].text
-				+ " - Kopie";
+			+ " - Kopie";
 	}
 
 	var submitParameters = "?mode=" + mode;
 
 	if (sta_id == 1 && mode == "save") {
-        doSubmit = true;
-        /*
+		doSubmit = true;
+		/*
 		name = prompt("Bitte gib einen Namen für die neue Konfiguration an:",
 				default_prompttext);
 		if (name == undefined || name == null) {
@@ -181,7 +180,7 @@ function doFormSubmit(mode) {
 	if (doSubmit) {
 		submitParameters += saveScrollPos();
 		document.form_sta_config.action = document.form_sta_config.action
-				+ submitParameters;
+			+ submitParameters;
 		replaceGTLT();
 		document.form_sta_config.submit();
 	}
