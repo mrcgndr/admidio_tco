@@ -7,6 +7,8 @@
     <!-- (c) The Admidio Team - https://www.admidio.org -->
 
     <link rel="shortcut icon" type="image/x-icon" href="{$urlTheme}/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="{$urlTheme}/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{$urlTheme}/images/favicon-16x16.png" sizes="16x16" />
     <link rel="apple-touch-icon" type="image/png" href="{$urlTheme}/images/apple-touch-icon.png" sizes="180x180" />
 
     <title>{$title}</title>
@@ -67,11 +69,13 @@
 
     <nav class="navbar fixed-top navbar-light navbar-expand flex-column flex-md-row bd-navbar" id="admidio-main-navbar">
         <a class="navbar-brand" href="{$urlAdmidio}/adm_program/overview.php">
-            <img class="d-none d-md-block align-top" src="{$urlTheme}/images/admidio_logo.png"
+            <img class="d-none d-md-block align-top" src="{$urlTheme}/images/admidio_logo.png" height=50px
                 alt="{$l10n->get('SYS_ADMIDIO_SHORT_DESC')}" title="{$l10n->get('SYS_ADMIDIO_SHORT_DESC')}">
         </a>
-        <span id="headline-organization" class="d-block d-lg-none">{$organizationName}</span>
-        <span id="headline-membership" class="d-none d-lg-block">{$l10n->get('SYS_ONLINE_MEMBERSHIP_ADMINISTRATION')} - {$organizationName}</span>
+        <!-- <span id="headline-organization" class="d-block d-lg-none">{$organizationName}</span> -->
+        <!-- <span id="headline-membership" class="d-none d-lg-block">{$l10n->get('SYS_ONLINE_MEMBERSHIP_ADMINISTRATION')} - {$organizationName}</span> -->
+		<span id="headline-organization" class="d-block d-lg-none">TCO Mitgliederportal</span>
+		<span id="headline-membership" class="d-none d-lg-block">TCO Mitgliederportal</span>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

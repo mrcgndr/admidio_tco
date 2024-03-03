@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+   <string name="PLG_WC_ADDRESS_USER">Meine Adresse als Absender verwenden</string>
+   <string name="PLG_WC_CREATE_WRITTEN_COMMUNICATIONS">Briefdokument erstellen</string>
+   <string name="PLG_WC_CHOOSE_TEMPLATE">Vorlage auswählen:</string>
+   <string name="PLG_WC_DOWNLOAD_DOCUMENT">Dokument herunterladen</string>
+   <string name="PLG_WC_FILENAME">Briefdokument</string>
+   <string name="PLG_WC_SELECTION">Auswahl:</string>
+   <string name="PLG_WC_INDIVIDUAL_RECIPIENT">individueller Empfänger</string>
+</resources>
