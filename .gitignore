@@ -20,11 +20,11 @@
 !/adm_plugins/latest-documents-files/
 !/adm_plugins/who-is-online/
 !/adm_plugins/category_report/
-# plugins used for TCO
+# additional plugins for TCO
 !/adm_plugins/awards
+!/adm_plugins/birthday_list
 !/adm_plugins/formfiller
-!/adm_plugins/geburtstagsliste
-!/adm_plugins/mitgliedsbeitrag
+!/adm_plugins/membership_fee
 !/adm_plugins/search_member
 !/adm_plugins/statistics
 !/adm_plugins/written_communications

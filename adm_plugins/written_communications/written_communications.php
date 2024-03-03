@@ -2,16 +2,15 @@
 /******************************************************************************
  * Plugin Written communications
  *
- * Copyright    : (c) 2004-2021 The Admidio Team
  * Homepage     : http://www.admidio.org
  * Author       : Thomas-RCV
  * License      : GNU Public License 2 http://www.gnu.org/licenses/gpl-2.0.html
- * Version      : 3.3.3
- * Required     : Admidio Version 4.0
+ * Version      : 3.4.1
+ * Required     : Admidio Version 4.1
  *
  *****************************************************************************/
 
-$rootPath = dirname(dirname(__DIR__));
+$rootPath = dirname(__DIR__, 2);
 $pluginFolder = basename(__DIR__);
 
 require_once($rootPath . '/adm_program/system/common.php');
@@ -41,10 +40,6 @@ if($gValidLogin)
     {
         $plg_wc_access = true;
     }
-    else
-	{
-		$plg_wc_access = false;
-    }
 
     if(!$plg_wc_access)
     {
@@ -71,8 +66,8 @@ if(!$plg_wc_access)
     exit();
 }
 
-// Intitialize parameter
-$getHeadline  = admFuncVariableIsValid($_GET, 'headline', 'string', array('defaultValue' => $gL10n->get('PLG_WC_CREATE_WRITTEN_COMMUNICATIONS')),false);
+// Initialize parameters
+$getHeadline  = admFuncVariableIsValid($_GET, 'headline', 'string', array('defaultValue' => $gL10n->get('PLG_WC_CREATE_WRITTEN_COMMUNICATIONS')));
 $getActiveRole  = admFuncVariableIsValid($_GET, 'active_role', 'bool', array('defaultValue' => true));
 //* Check if own templates are available and set template path
 if(is_dir(ADMIDIO_PATH . FOLDER_DATA . '/' . TableFolder::getRootFolderName() . '/MSWord_Templates'))
@@ -84,7 +79,7 @@ else
     $dir = 'templates';
 }
 
-// Define selectbox for membership conditon
+// Define selectbox for membership condition
 $selectBoxEntries = array(0 => $gL10n->get('SYS_ACTIVE_MEMBERS'), 1 => $gL10n->get('SYS_FORMER_MEMBERS'), 2 => $gL10n->get('SYS_ACTIVE_FORMER_MEMBERS'));
 // read templates and create template array
 $templateSelectionBox = array();
@@ -107,7 +102,7 @@ closedir($folder);
 $page = new HtmlPage('admidio-plugin-written-communication', $getHeadline);
 
 // Javascript for select boxes
-$page->addJavascript('$(document).ready(function () {
+$page->addJavascript('
     $("#plg_wc_recipient_manual").hide();
     $("input[id=recipient_mode]:checkbox").change(function (){
         if ($(this).is(":checked"))
@@ -131,8 +126,7 @@ $page->addJavascript('$(document).ready(function () {
         {
             $("#plg_wc_sender_manual").show("slow");
         }
-    })
-    });', true);
+    })', true);
 
 // Navigation starts here
 $gNavigation->addUrl(CURRENT_URL);
@@ -186,12 +180,12 @@ $form->closeGroupBox();
 // add editor for message
 $form->openGroupBox('plg_wc_description', $gL10n->get('SYS_TEXT'));
 $form->addInput('plg_wc_subject', $gL10n->get('SYS_SUBJECT'), '');
-$form->addEditor('plugin_CKEditor', null, '', array('toolbar' => 'AdmidioPlugin_WC'));
+$form->addEditor('plugin_CKEditor', '', '', array('toolbar' => 'AdmidioPlugin_WC'));
 $form->closeGroupBox();
  // add submit button
 $form->addSubmitButton('btn_send', $gL10n->get('PLG_WC_DOWNLOAD_DOCUMENT'), array('icon' => 'fa-file-download'));
 // add form to html page
-$page->addHtml($form->show(false));
+$page->addHtml($form->show());
 // show page
 $page->show();
 ?>

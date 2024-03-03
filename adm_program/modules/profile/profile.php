@@ -919,4 +919,6 @@ $page->addHtml(admFuncShowCreateChangeInfoById(
     $user->getValue('usr_timestamp_change')
 ));
 
+include_once(ADMIDIO_PATH . FOLDER_PLUGINS .'/awards/awards_profile_addin.php');
+
 $page->show();

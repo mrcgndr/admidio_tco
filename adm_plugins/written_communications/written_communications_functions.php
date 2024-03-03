@@ -239,7 +239,8 @@ $objDate->format('Y-m-d');
 
 $dateSystemFormat = $objDate->format($gSettingsManager->getString('system_date'));
 // Define file name
-$filename = $templatePath. '/' .$gL10n->get('PLG_WC_FILENAME').'_'.$dateSystemFormat.'.docx';
+// $filename = $templatePath. '/' .$gL10n->get('PLG_WC_FILENAME').'_'.$dateSystemFormat.'.docx';
+$filename = $gL10n->get('PLG_WC_FILENAME').'_'.$dateSystemFormat.'.docx';
 
 // New Word Document:
 $phpwordObject = new PHPWord();
