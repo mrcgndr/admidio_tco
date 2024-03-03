@@ -7,6 +7,27 @@
             </div>
         </div>
     </div>
+    <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-event-list">
+        <div class="card admidio-card">
+            <div class="card-body">
+                {load_admidio_plugin plugin="event-list" file="event-list.php"}
+            </div>
+        </div>
+    </div>
+    <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-announcement-list">
+        <div class="card admidio-card">
+            <div class="card-body">
+                {load_admidio_plugin plugin="announcement-list" file="announcement-list.php"}
+            </div>
+        </div>
+    </div>
+    <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-latest-documents-files">
+        <div class="card admidio-card">
+            <div class="card-body">
+                {load_admidio_plugin plugin="latest-documents-files" file="latest-documents-files.php"}
+            </div>
+        </div>
+    </div>
     <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-birthday">
         <div class="card admidio-card">
             <div class="card-body">
@@ -25,27 +46,6 @@
         <div class="card admidio-card">
             <div class="card-body">
                 {load_admidio_plugin plugin="random_photo" file="random_photo.php"}
-            </div>
-        </div>
-    </div>
-    <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-latest-documents-files">
-        <div class="card admidio-card">
-            <div class="card-body">
-                {load_admidio_plugin plugin="latest-documents-files" file="latest-documents-files.php"}
-            </div>
-        </div>
-    </div>
-    <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-announcement-list">
-        <div class="card admidio-card">
-            <div class="card-body">
-                {load_admidio_plugin plugin="announcement-list" file="announcement-list.php"}
-            </div>
-        </div>
-    </div>
-    <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-event-list">
-        <div class="card admidio-card">
-            <div class="card-body">
-                {load_admidio_plugin plugin="event-list" file="event-list.php"}
             </div>
         </div>
     </div>

@@ -1,0 +1,52 @@
+/*************************************************************************************
+ * Plugin Written communications documentation
+ *
+ * Copyright    : (c) 2004-2021 The Admidio Team
+ * Homepage     : http://www.admidio.org
+ * Author       : Thomas-RCV
+ * License      : GNU Public License 2 http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ ************************************************************************************/
+
+
+Changelog
+==========
+
+13.04.2014	Release 1.0:	- released.
+
+13.04.2014	Release 1.0.1: 	- [Bug] Wrong spelling or role member class.
+
+29.06.2014	Release 1.0.2: 	- [Bug] Changed prefix of temporary file to "zip" because of troubleshooting in some installations.
+				            - [Bug] Changed directory for temporary files to folder "templates/tempdir" in current root case of openbase_dir settings.
+
+18.08.2014  Release 1.1:    - [new] Control structure for access to the plugin for roles.
+                            - [new] Optional profile fields.
+                            - [new] Optional text fields.
+
+24.09.2015  Release 2.0:    - [new] Reworked customer surface to Admidio 3.0 with bootstrap
+                            - [new] Common improvement of code style.
+                            - [todo] Color style in CKEditor does not work with new CKeditor Script -> bugfix release in between the plugin **
+
+28.09.2015  Release 2.0.1:  - [Bug] Classes are not loaded if throwing message that valid entries are not found.
+                            - [Bug] File path for templates not set correctly.
+                            - [internal] Reworked name convention to camel caps.
+
+12.10.2016  Release 3.0:    - Compatibility with Admidio 3.1
+                            - PHP7 ready
+                            - [new] Language "de_sie"
+                            - [rework] text color style assignment
+
+08.01.2017  Release 3.1:    - Compatibility with Admidio 3.2
+                            - changed folder path of the user tamplates to new organization folder names in the Download module.
+                            - renamed "Webmaster" to "Administrator" in the config file ( $plg_wc_roleArray = array('Administrator'); ).
+
+16.11.2018  Release 3.2.1:  - Compatibility with Admidio 3.3
+
+01.11.2020  Release 3.3.0:  - Compatibility with Admidio 4.0
+
+07.11.2020  Release 3.3.1:  - Update translation strings
+
+15.11.2020  Release 3.3.2:  - PHP 7.4 compatibility
+                            - Update SimpleHtmlDom library to version 1.9.1
+
+24.01.2021  Release 3.3.3:  - [Bug] Output of street was not possible because of a rename of the internal field name
