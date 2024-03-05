@@ -40,3 +40,6 @@ php-cs-fixer
 # For custom configuration
 /.php_cs
 /.idea
+
+# Synology
+@eaDir
