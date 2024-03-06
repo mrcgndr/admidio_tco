@@ -21,6 +21,7 @@
 !/adm_plugins/who-is-online/
 !/adm_plugins/category_report/
 # additional plugins for TCO
+!/adm_plugins/arbeitsdienst
 !/adm_plugins/awards
 !/adm_plugins/birthday_list
 !/adm_plugins/formfiller
