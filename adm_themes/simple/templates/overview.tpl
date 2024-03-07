@@ -56,4 +56,11 @@
             </div>
         </div>
     </div>
+    <div class="admidio-overview-plugin col-sm-6 col-lg-4 col-xl-3" id="admidio-plugin-search-member">
+        <div class="card admidio-card">
+            <div class="card-body">
+                {load_admidio_plugin plugin="search_member" file="search_member.php"}
+            </div>
+        </div>
+    </div>
 </div>
