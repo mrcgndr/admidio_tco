@@ -548,9 +548,8 @@ input[type=time] {
     cursor: help;
 }
 
-.admidio-event-highlight .card-header,
-tr.admidio-event-highlight {
-    background-color: #cccccc;
+.admidio-event-highlight .card-header, tr.admidio-event-highlight {
+    background-color: #cccccc !important;
 }
 
 .admidio-event-approval-state-attend .fas {
