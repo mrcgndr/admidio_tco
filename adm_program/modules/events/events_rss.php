@@ -1,15 +1,21 @@
 <?php
 /**
  ***********************************************************************************************
- * RSS feed of events. Lists the newest 10 events.
+ * RSS feed of events. Lists the newest 50 events.
  * Specification von RSS 2.0: http://www.feedvalidator.org/docs/rss2.html
  *
  * @copyright The Admidio Team
  * @see https://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
- ***********************************************************************************************
+ *
+ * Parameters:
+ *
+ * org_uuid  - Show only announcements of this organization
+ * *********************************************************************************************
  */
 require_once(__DIR__ . '/../../system/common.php');
+
+$getOrgUuid  = admFuncVariableIsValid($_GET, 'org_uuid', 'string');
 
 // Check if RSS is active...
 if (!$gSettingsManager->getBool('enable_rss')) {
@@ -24,17 +30,23 @@ if ((int) $gSettingsManager->get('events_module_enabled') !== 1) {
     // => EXIT
 }
 
+if ($getOrgUuid !== '') {
+    $organization = new Organization($gDb);
+    $organization->readDataByUuid($getOrgUuid);
+    $organizationName = $organization->getValue('org_long_name');
+    $gCurrentUser->setOrganization($organization->getValue('org_id'));
+} else {
+    $organizationName = $gCurrentOrganization->getValue('org_longname');
+}
+
 try {
     $events = new ModuleEvents();
     $events->setDateRange();
-    $eventsResult = $events->getDataSet(0, 10);
+    $eventsResult = $events->getDataSet(0, 50);
 } catch (AdmException $e) {
     $e->showText();
 }
 
-// from here the RSS feed is compiled
-
-$organizationName = $gCurrentOrganization->getValue('org_longname');
 // create RSS feed object with channel information
 $rss  = new RssFeed(
     $organizationName . ' - ' . $gL10n->get('SYS_EVENTS'),
@@ -42,7 +54,6 @@ $rss  = new RssFeed(
     $gL10n->get('SYS_CURRENT_EVENTS_OF_ORGA', array($organizationName)),
     $organizationName
 );
-$event = new TableEvent($gDb);
 
 // add the RSS items to the RssFeed object
 if ($eventsResult['numResults'] > 0) {
@@ -99,9 +110,11 @@ if ($eventsResult['numResults'] > 0) {
             SecurityUtils::encodeUrl(ADMIDIO_URL . FOLDER_MODULES . '/events/events.php', array('dat_uuid' => $eventUuid, 'view' => 'detail')),
             $row['create_name'],
             DateTime::createFromFormat('Y-m-d H:i:s', $event->getValue('dat_timestamp_create', 'Y-m-d H:i:s'))->format('r'),
-            $event->getValue('cat_name')
+            $event->getValue('cat_name'),
+            $event->getValue('dat_uuid')
         );
     }
 }
 
+$gCurrentUser->setOrganization($gCurrentOrgId);
 $rss->getRssFeed();

@@ -1,15 +1,21 @@
 <?php
 /**
  ***********************************************************************************************
- * RSS feed of guestbook. Lists the newest 10 guestbook entries.
+ * RSS feed of guestbook. Lists the newest 50 guestbook entries.
  * Specification von RSS 2.0: http://www.feedvalidator.org/docs/rss2.html
  *
  * @copyright The Admidio Team
  * @see https://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
- ***********************************************************************************************
+ *
+ * Parameters:
+ *
+ * org_uuid  - Show only announcements of this organization
+ * *********************************************************************************************
  */
 require_once(__DIR__ . '/../../system/common.php');
+
+$getOrgUuid  = admFuncVariableIsValid($_GET, 'org_uuid', 'string');
 
 // Check if RSS is active...
 if (!$gSettingsManager->getBool('enable_rss')) {
@@ -24,17 +30,26 @@ if ((int) $gSettingsManager->get('enable_guestbook_module') !== 1) {
     // => EXIT
 }
 
+if ($getOrgUuid !== '') {
+    $organization = new Organization($gDb);
+    $organization->readDataByUuid($getOrgUuid);
+    $organizationName = $organization->getValue('org_long_name');
+    $organizationID = $organization->getValue('org_id');
+} else {
+    $organizationName = $gCurrentOrganization->getValue('org_longname');
+    $organizationID = $gCurrentOrgId;
+}
+
 // get the latest 10 guestbook entries
 $sql = 'SELECT *
           FROM '.TBL_GUESTBOOK.'
-         WHERE gbo_org_id = ? -- $gCurrentOrgId
+         WHERE gbo_org_id = ? -- $organizationID
            AND gbo_locked = false
       ORDER BY gbo_timestamp_create DESC
-         LIMIT 10';
-$statement = $gDb->queryPrepared($sql, array($gCurrentOrgId));
+         LIMIT 50';
+$statement = $gDb->queryPrepared($sql, array($organizationID));
 
 // create RSS feed object with channel information
-$organizationName = $gCurrentOrganization->getValue('org_longname');
 $rss = new RssFeed(
     $organizationName . ' - ' . $gL10n->get('GBO_GUESTBOOK'),
     $gCurrentOrganization->getValue('org_homepage'),
@@ -54,7 +69,9 @@ while ($row = $statement->fetch()) {
         $guestbook->getValue('gbo_text'),
         SecurityUtils::encodeUrl(ADMIDIO_URL . FOLDER_MODULES . '/guestbook/guestbook.php', array('id' => (int) $guestbook->getValue('gbo_id'))),
         $guestbook->getValue('gbo_name'),
-        \DateTime::createFromFormat('Y-m-d H:i:s', $guestbook->getValue('gbo_timestamp_create', 'Y-m-d H:i:s'))->format('r')
+        \DateTime::createFromFormat('Y-m-d H:i:s', $guestbook->getValue('gbo_timestamp_create', 'Y-m-d H:i:s'))->format('r'),
+        '',
+        $guestbook->getValue('gbo_uuid')
     );
 }
 
