@@ -298,10 +298,10 @@ class TableEvent extends TableAccess
 
         // Filter out semicolons
         $iCalVEvent[] = 'UID:' . $this->getValue('dat_timestamp_create', $dateTimeFormat) . '+' . (int) $this->getValue('dat_usr_id_create') . '@' . DOMAIN;
-        $iCalVEvent[] = 'SUMMARY:' . $this->escapeIcalText($this->getValue('dat_headline'));
+        $iCalVEvent[] = 'SUMMARY:' . $this->escapeIcalText($this->getValue('dat_headline', 'database'));
         $iCalVEvent[] = 'DESCRIPTION:' . StringUtils::strStripTags($this->escapeIcalText(html_entity_decode($this->getValue('dat_description'), ENT_QUOTES, 'UTF-8')));
         $iCalVEvent[] = 'DTSTAMP:' . date($dateTimeFormat);
-        $iCalVEvent[] = 'LOCATION:' . $this->escapeIcalText($this->getValue('dat_location'));
+        $iCalVEvent[] = 'LOCATION:' . $this->escapeIcalText((string) $this->getValue('dat_location', 'database'));
 
         if ((int) $this->getValue('dat_all_day') === 1) {
             // The end date for multi-day appointments must also be + 1 day in iCal.
