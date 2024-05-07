@@ -1,4 +1,5 @@
 <?php
+
 /**
  ***********************************************************************************************
  * Configuration file for Admidio plugin event list
@@ -23,7 +24,7 @@ $plg_show_date_end = 1;
 // Shows a short preview text of the event.
 // 0  - no short preview
 // 70 - Number of characters of the preview text
-$plg_events_show_preview = 70;
+$plg_events_show_preview = 128;
 
 // If this option is set to true (1) than the full content of the
 // description will be shown. Also images and other html content.
