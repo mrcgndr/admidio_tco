@@ -41,7 +41,7 @@ $plg_show_alter_anrede = 18;
 $plg_show_hinweis_keiner = 0;
 
 // Show all birthdays in the last x days
-$plg_show_zeitraum = 1;
+$plg_show_zeitraum = 2;
 
 // Show all birthdays of the next x days
 $plg_show_future = 2;

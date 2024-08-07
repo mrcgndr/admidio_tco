@@ -13,12 +13,12 @@
  */
 
 // Number of announcements to be displayed (Default = 2)
-$plg_announcements_count = 2;
+$plg_announcements_count = 4;
 
 // Shows a short preview text of the announcement.
 // 0  - no short preview
 // 70 - Number of characters of the preview text
-$plg_show_preview = 70;
+$plg_show_preview = 0;
 
 // If this option is set to true (1) than the full content of the
 // description will be shown. Also images and other html content.
