@@ -24,13 +24,13 @@ $plg_show_date_end = 1;
 // Shows a short preview text of the event.
 // 0  - no short preview
 // 70 - Number of characters of the preview text
-$plg_events_show_preview = 128;
+$plg_events_show_preview = 255;
 
 // If this option is set to true (1) than the full content of the
 // description will be shown. Also images and other html content.
 // 0 - only show text preview of description
 // 1 - show full html content of description
-$plgShowFullDescription = 0;
+$plgShowFullDescription = 1;
 
 // Maximum number of characters in a word before a line break should be performed.
 // Value 0 deactivates a line break.
