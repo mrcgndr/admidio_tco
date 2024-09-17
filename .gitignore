@@ -29,15 +29,6 @@
 !/adm_plugins/search_member
 !/adm_plugins/statistics
 !/adm_plugins/written_communications
-# additional plugins for TCO
-!/adm_plugins/arbeitsdienst
-!/adm_plugins/awards
-!/adm_plugins/birthday_list
-!/adm_plugins/formfiller
-!/adm_plugins/membership_fee
-!/adm_plugins/search_member
-!/adm_plugins/statistics
-!/adm_plugins/written_communications
 
 # Don't commit the external libs from vendor folder
 /vendor

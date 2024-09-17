@@ -143,6 +143,7 @@ function editStructure(action, tableNr, colNr, rowNr, mvUp) {
 }
 
 function editRowOrder() {
+
 }
 
 function doFormSubmit(mode) {
